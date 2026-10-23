@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moje poznámky</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Moje poznámky</h1>
+    <form id="note-form">
+      <label for="note-input">Nová poznámka</label>
+      <div class="entry">
+        <input id="note-input" name="note" maxlength="200" required placeholder="Napiš poznámku…">
+        <button type="submit">Přidat</button>
+      </div>
+    </form>
+    <ul id="notes" aria-live="polite"></ul>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
